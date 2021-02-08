@@ -1,4 +1,4 @@
-name: Crate BM digital contacts 
+name: Create BM digital contacts 
 
 on:
   schedule:
@@ -39,7 +39,7 @@ jobs:
           python3 brandmeister-digital-contacts.py Belarus
       
       - name: Remove all CSV files which older then 15 mins
-        run: find . -mmin +15 -name '*.csv' -exec rm {} \;
+        run: find . -mmin +5 -name '*.csv' -exec rm {} \;
 
       - name: Create directory listing 
         run: tree -P "*.csv" -H '.' --charset utf-8 > index.html
