@@ -1,5 +1,7 @@
 name: Create BM digital contacts 
 
+
+
 on:
   schedule:
       - cron: '0 22 * * *'
