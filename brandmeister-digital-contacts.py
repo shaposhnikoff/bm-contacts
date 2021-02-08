@@ -14,7 +14,7 @@ args = parser.parse_args()
 
 country = args.country
 fileInput = "users.json"
-fileOutput = "users."+"_"+str(country)+"_"+str(datetime.now().strftime("%Y_%m_%d-%H_%M_%S"))+".csv"
+fileOutput = "users"+"_"+str(country)+"_"+str(datetime.now().strftime("%Y_%m_%d-%H_%M_%S"))+".csv"
 fileage = 60
 source_file = "https://database.radioid.net/static/users.json"
 
