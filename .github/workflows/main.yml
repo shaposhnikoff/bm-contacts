@@ -47,10 +47,18 @@ jobs:
           git config user.name ${{ secrets.USERNAME }}
           git config user.email ${{ secrets.EMAIL }}
 
-      - name: commit changes
+      - name: Run a multi-line script
         run: |
-          chmod +x ./commit.sh
-          ./commit.sh
+          dated=`date +%Y-%m-%d-%H%M%S`
+          git add .
+          git commit -m "Brandmaister digital contacts on "${dated}
+          git push -u origin main
+
+
+#      - name: commit changes
+#        run: |
+#          chmod +x ./commit.sh
+#          ./commit.sh
           
            
       - name: Send mail
