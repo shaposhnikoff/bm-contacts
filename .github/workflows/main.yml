@@ -28,11 +28,9 @@ jobs:
         run: |
           python3 brandmeister-digital-contacts.py World
 
-
       - name: Generate BM digital contacts for Ukraine
         run: |
           python3 brandmeister-digital-contacts.py Ukraine
-
 
       - name: Generate BM digital contacts for RB 
         run: |
