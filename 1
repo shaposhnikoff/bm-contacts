@@ -1,4 +1,18 @@
+#!/bin/bash -x
+
+
+#f30days=$(date +%s --date="-30 days")
+#for file in *.csv; do
+#    fdate=$(echo $file | tr _ -)
+#    fsec=$(date +%s --date=${fdate/.txt/})
+#    if [[ $fsec -lt $f30days ]]; then
+#        echo "rm $file"
+#    fi
+#done
+
+
 #find . -mtime +7 -name '*.csv' -exec rm {} \;
 find . -mmin +2 -name '*.csv' -exec rm {} \;
+
 
 
