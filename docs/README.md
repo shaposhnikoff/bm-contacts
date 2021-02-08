@@ -7,7 +7,7 @@
 2. Бесплатный или платный, домен (и права управления ДНС конфигурацией).
 3. 
 
-1. создаем репозиторий на Github. Имя может быть любое.
+* создаем репозиторий на Github. Имя может быть любое.
 
 <img src="pic/01-create-github-repo.png" alt="drawing" width="800"/>
 
@@ -42,7 +42,7 @@ git config user.email ${{ secrets.EMAIL }}
 
 Заходим в настройки репозитория, settings/secrets/actions
 
-![setting secrets](pic/02-create-secrets.png)
+<img src="pic/02-create-secrets.png" alt="drawing" width="800"/>
 
 нажимаем New Repository Secret и заполняем соответствующие поля. 
 
@@ -64,19 +64,21 @@ git config user.email ${{ secrets.EMAIL }}
 
 В большинстве случаев, Github Actions после этих настроек начинают работать, и мы можем видеть зеленый статус 
 выполнения 
-![gh_actions](pic/gh_actions_almost_green.png)
 
+<img src="pic/gh_actions_almost_green.png" alt="drawing" width="800"/>
 
 На данном этапе мы закончили с логикой генерации файлов и переходим к настройке ВебСервисов
 
 Заходим в settings --> Github Pages ( далее GP ). По умолчанию GP отключены для всякого репозитория, их необходимо включить
 Для того, чтобы их включить мы должны указать ветку (branch) - в котором содержатся наши html файлы для отображения - у нас это **main** и каталог, в котором находятся наш index.html - это **root** 
 
-![gh](pic/gh_initial_setup.png)
+
+<img src="pic/gh_initial_setup.png" alt="drawing" width="800"/>
 
 Далее, сохраняем изменения и у нас появляется поле для ввода Custom Domain
 
-![custom](pic/gh_custom_domain.png)
+
+<img src="pic/gh_custom_domain.png" alt="drawing" width="800"/>
 
 Домен .cf можно зарегистрировать совершенно [бесплатно](http://freenom.com) на срок до 1 года, для тестовых задач этого вполне достаточно.
 
