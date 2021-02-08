@@ -1,17 +1,21 @@
-Итак, опять зима, на улицу выходить совершенно не хочется, антенна сложена в ожидании
-хорошей погоды
-
-![antenna](pic/1612777258049.jpg)
+Итак, опять зима, на улицу выходить совершенно не хочется - 
 
 
+Нам потребуется 
 
-
+1. Учетная запись на Github.
+2. Бесплатный или платный, домен (и права управления ДНС конфигурацией).
+3. 
 
 1. создаем репозиторий на Github. Имя может быть любое.
 
+![create github repo](pic/01-create-github-repo.png =600x)
+
+
+2. клонируем его локально
 
 ```
-max@max-dacha git_repos $ git clone git@github.com:shaposhnikoff/bm-contacts.git
+max@max $ git clone git@github.com:shaposhnikoff/bm-contacts.git
 Cloning into 'bm-contacts'...
 Warning: Permanently added 'github.com,140.82.121.4' (RSA) to the list of known hosts.
 remote: Enumerating objects: 3, done.
@@ -19,27 +23,6 @@ remote: Counting objects: 100% (3/3), done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
-
-```
-
-Here's an image:
-
-![create github repo](pic/01-create-github-repo.png)
-
-Move along.
-
-2. клонируем его локально, для удобства
-
-```
-max@max-dacha git_repos $ git clone git@github.com:shaposhnikoff/bm-contacts.git
-Cloning into 'bm-contacts'...
-Warning: Permanently added 'github.com,140.82.121.4' (RSA) to the list of known hosts.
-remote: Enumerating objects: 3, done.
-remote: Counting objects: 100% (3/3), done.
-remote: Compressing objects: 100% (2/2), done.
-remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (3/3), done.
-
 ```
 
 Добавляем в репозиторий скрипт, который будет генерировать CSV файлы и логику Github Actions, которая будет периодически 
