@@ -38,8 +38,14 @@ jobs:
         run: |
           python3 brandmeister-digital-contacts.py Belarus
       
-      - name: Remove all CSV files which older then 15 mins
-        run: find . -mmin +5 -name '*.csv' -exec rm {} \;
+      - name: List before
+        run: ls -l
+      
+      - name: Remove all CSV files which older then 2 mins
+        run: find . -mmin +2 -name '*.csv' -exec rm {} \;
+      
+      - name: List after
+        run: ls -l
 
       - name: Create directory listing 
         run: tree -P "*.csv" -H '.' --charset utf-8 > index.html
