@@ -69,3 +69,7 @@ git config user.email ${{ secrets.EMAIL }}
 	name = Username Lastname
 ```
 Итак, мы заполнили необходимые поля - возвращаемся назад.
+
+В большинстве случаев, Github Actions после этих настроек начинают работать, и мы можем видеть зеленый статус 
+выполнения 
+~[gh_actions](pic/gh_actions_almost_green.png)
