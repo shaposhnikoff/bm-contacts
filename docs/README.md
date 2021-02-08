@@ -9,7 +9,7 @@
 
 1. создаем репозиторий на Github. Имя может быть любое.
 
-![create github repo](pic/01-create-github-repo.png =600x)
+<img src="pic/01-create-github-repo.png" alt="drawing" width="800"/>
 
 
 2. клонируем его локально
