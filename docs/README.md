@@ -54,8 +54,8 @@ git config user.email ${{ secrets.EMAIL }}
 
 нажимаем New Repository Secret и заполняем соответствующие поля. 
 
-![username](pic/
-![email](pic/Screenshot%20at%202021-02-08%2010-36-07.png)
+![username](pic/secrets_username.png)
+![email](pic/secrets_email.png)
 
 
 
